@@ -1,0 +1,16 @@
+instances:
+  - name: ubuntu-desktop
+    box: bento/ubuntu-18.04
+    memory: 4096
+    cpus: 4
+    gui: true
+    customize:
+      - "modifyvm": :id
+        "--vram": "256"
+        "--clipboard": "bidirectional"
+        "--accelerate3d": "on"
+        "--hwvirtex": "on"
+        "--nestedpaging": "on"
+        "--largepages": "on"
+        "--ioapic": "on"
+        "--pae": "on"
