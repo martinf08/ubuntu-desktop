@@ -5,8 +5,7 @@ instances:
     cpus: 4
     gui: true
     customize:
-      - "modifyvm": :id
-        "--vram": "256"
+      - "--vram": "256"
         "--clipboard": "bidirectional"
         "--accelerate3d": "on"
         "--hwvirtex": "on"
